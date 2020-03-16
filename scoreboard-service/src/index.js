@@ -17,6 +17,16 @@ const scores = [
         name: '',
         points: '',
         id: 3
+    },
+    {
+        name: '',
+        points: '',
+        id: 4
+    },
+    {
+        name: '',
+        points: '',
+        id: 5
     }
 ]
 

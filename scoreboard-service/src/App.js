@@ -8,7 +8,7 @@ class App extends React.Component {
     this.state = {
       scores: props.scores,
       newName: '',
-      newScore: ''
+      newScore: 0
     }
   }
 
@@ -40,21 +40,27 @@ class App extends React.Component {
   }
 
   render() {
+
+    const arrange = this.state.scores.sort(function(a, b)
+      {return a.points - b.points});
+      arrange.reverse();
+    const scoresToShow = arrange.slice(0, 5);
+
     return (
       <div>
         <h1>Scoreboard</h1>
         <ol>
-          {this.state.scores.map(scores => <li key={scores.id}>{scores.name} {scores.points}</li>)}
+          {scoresToShow.map(scores => <Scores key={scores.id} scores={scores} />)}
         </ol>
         <form onSubmit={this.addName}>
             name: <input
-              class="input"
+              className="input"
               type="text" value={this.state.newName}
               onChange={this.handleNoteChange}
               placeholder="name" />
             points: <input
-              class="input"
-              type="text" value={this.state.newScore}
+              className="input"
+              type="number" value={this.state.newScore}
               onChange={this.handleScoreChange}
               placeholder="points" />
             <button type="submit">Add score</button>
