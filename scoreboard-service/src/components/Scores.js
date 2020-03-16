@@ -2,7 +2,7 @@ import React from 'react';
 
 const Scores = ({ scores }) => {
     return (
-        <li>{scores.name}{scores.points}</li> 
+        <li>{scores.name} {scores.points}</li> 
     )
 }
 

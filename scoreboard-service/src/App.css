@@ -4,21 +4,31 @@ h1 {
 }
 
 body {
-  background: rgb(252, 164, 164);
+  margin: 0;
+  padding: 0;
+  background: rgb(253, 181, 181);
   font-family: 'Andika';
 }
 
 ol {
+  position: relative;
   width: 450px;
   margin: 100px auto 0;
   box-sizing: border-box;
+  border-radius: 4px;
 }
 
 ol li {
-  background: rgba(255,255,255,.1);
+  background: rgb(255, 199, 199);
   padding: 10px;
   color: black;
-  margin: 5px 0;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+
+ol li:hover {
+  box-shadow: 2.5px 2.5px 2.5px black;
 }
 
 form {
@@ -32,7 +42,7 @@ form {
   margin: 10px;
   padding: 8px;
   box-sizing: border-box;
-  background: rgba(255,255,255,.1);
+  background: rgb(255, 199, 199);
   font-family: 'Andika';
 }
 
@@ -43,5 +53,13 @@ button {
   margin: 8px;
   padding: 8px 16px;
   box-sizing: border-box;
-  background: rgba(255,255,255,.1);
+  background: rgb(255, 199, 199);
+}
+
+button:hover {
+  box-shadow: 2.5px 2.5px 2.5px black;
+}
+
+.input:hover {
+  box-shadow: 2.5px 2.5px 2.5px black;
 }

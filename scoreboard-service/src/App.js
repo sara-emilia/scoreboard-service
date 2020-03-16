@@ -8,7 +8,7 @@ class App extends React.Component {
     this.state = {
       scores: props.scores,
       newName: '',
-      newScore: 0
+      newScore: ''
     }
   }
 
@@ -60,7 +60,7 @@ class App extends React.Component {
               placeholder="name" />
             points: <input
               className="input"
-              type="number" value={this.state.newScore}
+              type="text" value={this.state.newScore}
               onChange={this.handleScoreChange}
               placeholder="points" />
             <button type="submit">Add score</button>
