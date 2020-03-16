@@ -1,0 +1,48 @@
+h1 {
+  text-align: center;
+  padding-top: 15px;
+  font-size: 50px;
+}
+
+body {
+  background: rgb(252, 164, 164);
+  font-family: 'Andika';
+}
+
+ol {
+  width: 450px;
+  margin: 100px auto 0;
+  box-sizing: border-box;
+}
+
+ol li {
+  background: rgba(255,255,255,.1);
+  padding: 10px 20px;
+  color: black;
+  margin: 5px 0;
+}
+
+form {
+  text-align: center;
+  padding: 10px;
+}
+
+.input {
+  border: 0.5px;
+  border-radius: 4px;
+  margin: 10px;
+  padding: 8px;
+  box-sizing: border-box;
+  background-color: rgb(248, 176, 176);
+  font-family: 'Andika';
+}
+
+button {
+  font-family: 'Andika';
+  border: 0.5px;
+  border-radius: 4px;
+  margin: 8px;
+  padding: 8px;
+  box-sizing: border-box;
+  background-color: rgb(248, 176, 176);
+}
