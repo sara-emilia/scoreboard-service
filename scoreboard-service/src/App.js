@@ -49,22 +49,22 @@ class App extends React.Component {
     return (
       <div>
         <h1>Scoreboard</h1>
-        <ol>
-          {scoresToShow.map(scores => <Scores key={scores.id} scores={scores} />)}
-        </ol>
-        <form onSubmit={this.addName}>
-            name: <input
-              className="input"
-              type="text" value={this.state.newName}
-              onChange={this.handleNoteChange}
-              placeholder="name" />
-            points: <input
-              className="input"
-              type="text" value={this.state.newScore}
-              onChange={this.handleScoreChange}
-              placeholder="points" />
-            <button type="submit">Add score</button>
-        </form>
+          <ol>
+            {scoresToShow.map(scores => <Scores key={scores.id} scores={scores} />)}
+          </ol>
+          <form onSubmit={this.addName}>
+              name: <input
+                className="input"
+                type="text" value={this.state.newName}
+                onChange={this.handleNoteChange}
+                placeholder="name" />
+              points: <input
+                className="input"
+                type="text" value={this.state.newScore}
+                onChange={this.handleScoreChange}
+                placeholder="points" />
+              <button type="submit">Add score</button>
+          </form>
       </div>
     )
   }

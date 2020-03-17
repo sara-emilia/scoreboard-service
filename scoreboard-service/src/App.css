@@ -1,6 +1,7 @@
 h1 {
   text-align: center;
   font-size: 50px;
+  padding: 5px;
 }
 
 body {
@@ -11,11 +12,8 @@ body {
 }
 
 ol {
-  position: relative;
   width: 450px;
-  margin: 100px auto 0;
-  box-sizing: border-box;
-  border-radius: 4px;
+  margin: 0 auto 0;
 }
 
 ol li {
@@ -27,18 +25,14 @@ ol li {
   border-radius: 6px;
 }
 
-ol li:hover {
-  box-shadow: 2.5px 2.5px 2.5px black;
-}
-
 form {
   text-align: center;
   padding: 10px;
 }
 
-.input {
+.input , button {
   border: 0.5px;
-  border-radius: 4px;
+  border-radius: 6px;
   margin: 10px;
   padding: 8px;
   box-sizing: border-box;
@@ -47,19 +41,15 @@ form {
 }
 
 button {
-  font-family: 'Andika';
-  border: 0.5px;
-  border-radius: 4px;
-  margin: 8px;
-  padding: 8px 16px;
-  box-sizing: border-box;
-  background: rgb(255, 199, 199);
+  padding: 6px 18px;
+  font-size: medium;
 }
 
-button:hover {
+button:hover, .input:hover, ol li:hover {
   box-shadow: 2.5px 2.5px 2.5px black;
 }
 
-.input:hover {
-  box-shadow: 2.5px 2.5px 2.5px black;
+button[type=submit]:focus, .input:focus {
+  background-color: rgb(255, 199, 199);
+  outline: 0;
 }
